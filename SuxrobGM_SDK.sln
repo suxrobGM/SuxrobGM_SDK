@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuxrobGM_SDK", "SuxrobGM_SDK\SuxrobGM_SDK.csproj", "{447E83E0-C884-4254-8405-F02CC75C80AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{447E83E0-C884-4254-8405-F02CC75C80AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447E83E0-C884-4254-8405-F02CC75C80AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447E83E0-C884-4254-8405-F02CC75C80AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447E83E0-C884-4254-8405-F02CC75C80AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F568167-7CAD-4282-A3A4-7FCDCD2B7D9E}
+	EndGlobalSection
+EndGlobal
