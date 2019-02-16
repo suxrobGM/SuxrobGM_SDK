@@ -17,21 +17,8 @@ namespace SuxrobGM_SDK.Pagination
             this.AddRange(items);
         }
 
-        public bool HasPreviousPage
-        {
-            get
-            {
-                return (PageIndex > 1);
-            }
-        }
-
-        public bool HasNextPage
-        {
-            get
-            {
-                return (PageIndex < TotalPages);
-            }
-        }       
+        public bool HasPreviousPage { get => PageIndex > 1; }  
+        public bool HasNextPage { get => PageIndex < TotalPages; }           
 
         public static PaginatedList<T> Create(IQueryable<T> source, int pageIndex, int pageSize = 10)
         {
