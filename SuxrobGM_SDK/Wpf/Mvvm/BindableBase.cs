@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace SuxrobGM_SDK.Mvvm
+namespace SuxrobGM_SDK.Wpf.Mvvm
 {
     public class BindableBase : INotifyPropertyChanged
     {
