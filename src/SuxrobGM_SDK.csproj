@@ -1,7 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SuxrobGM_SDK</AssemblyName>
+    <Version>0.1.0</Version>
+    <Authors>SuxrobGM</Authors>
+    <Product>SuxrobGM's Software Development Kits</Product>
+    <PackageTags>sdk, wpf, mvvm, utils, development kits</PackageTags>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
