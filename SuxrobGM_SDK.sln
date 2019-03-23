@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuxrobGM_SDK", "SuxrobGM_SDK\SuxrobGM_SDK.csproj", "{447E83E0-C884-4254-8405-F02CC75C80AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuxrobGM_SDK", "src\SuxrobGM_SDK.csproj", "{447E83E0-C884-4254-8405-F02CC75C80AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
