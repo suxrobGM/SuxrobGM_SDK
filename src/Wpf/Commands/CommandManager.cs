@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-namespace SuxrobGM_SDK.Wpf.Commands
+namespace SuxrobGM.Sdk.Wpf.Commands
 {
     public static class CommandManager
     {

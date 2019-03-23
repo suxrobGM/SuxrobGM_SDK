@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace SuxrobGM_SDK.Utils
+namespace SuxrobGM.Sdk.Utils
 {
     public class Benchmark : IDisposable
     {

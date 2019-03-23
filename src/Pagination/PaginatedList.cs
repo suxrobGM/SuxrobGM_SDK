@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SuxrobGM_SDK.Pagination
+namespace SuxrobGM.Sdk.Pagination
 {
     public class PaginatedList<T> : List<T>
     {

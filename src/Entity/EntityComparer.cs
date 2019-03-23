@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SuxrobGM_SDK.Entity
+namespace SuxrobGM.Sdk.Entity
 {
     public class EntityComparer : IEqualityComparer<EntityBase>
     {

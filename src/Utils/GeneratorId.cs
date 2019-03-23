@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SuxrobGM_SDK.Utils
+namespace SuxrobGM.Sdk.Utils
 {
     public static class GeneratorId
     {

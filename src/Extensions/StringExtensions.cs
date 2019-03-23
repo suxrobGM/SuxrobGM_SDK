@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace SuxrobGM_SDK.Extensions
+namespace SuxrobGM.Sdk.Extensions
 {
     public static class StringExtensions
     {       

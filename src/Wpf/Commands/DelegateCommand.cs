@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Input;
 
-namespace SuxrobGM_SDK.Wpf.Commands
+namespace SuxrobGM.Sdk.Wpf.Commands
 {
     public class DelegateCommand : ICommand
     {

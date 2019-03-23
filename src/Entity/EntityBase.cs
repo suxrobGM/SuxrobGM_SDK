@@ -1,6 +1,6 @@
-﻿using SuxrobGM_SDK.Utils;
+﻿using SuxrobGM.Sdk.Utils;
 
-namespace SuxrobGM_SDK.Entity
+namespace SuxrobGM.Sdk.Entity
 {
     public abstract class EntityBase
     {
