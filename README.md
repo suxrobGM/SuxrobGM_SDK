@@ -1,2 +1,2 @@
 # SuxrobGM_SDK
-SuxrobGM SDK light weight library for MVVM patterns
+SuxrobGM SDK light weight library 
