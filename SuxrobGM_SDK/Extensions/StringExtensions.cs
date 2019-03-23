@@ -18,9 +18,9 @@ namespace SuxrobGM_SDK.Extensions
             return str;
         }
        
-        public static string IgnoreChars(this string str, string[] allowedChars)
+        public static string IgnoreChars(this string str, string[] allowedChars = null)
         {
-            if (allowedChars.Length <= 0)
+            if (allowedChars == null)
             {
                 allowedChars = new string[]
                 {
