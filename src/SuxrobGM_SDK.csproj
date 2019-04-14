@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk</AssemblyName>
-    <Version>0.1.1</Version>
+    <Version>0.2</Version>
     <Authors>SuxrobGM</Authors>
     <Product>SuxrobGM's Software Development Kits</Product>
-    <PackageTags>sdk, wpf, mvvm, utils, development kits</PackageTags>
+    <PackageTags>sdk, wpf, mvvm, utils, development kits, tag helpers, aspnet core, ef core, entity framework</PackageTags>
     <PackageProjectUrl>https://github.com/suxrobGM/SuxrobGM_SDK</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
     <Description>SuxrobGM's Software Development Kits</Description>
