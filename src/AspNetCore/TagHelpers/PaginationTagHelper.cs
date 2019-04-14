@@ -52,7 +52,7 @@ namespace SuxrobGM.Sdk.AspNetCore.TagHelpers
                     output.Content.AppendHtml("<li class='page-item disabled'><a class='page-link'>...</a></li>");
                 }               
 
-                for (int i = PageIndex - 4; i < PageIndex + 4; i++)
+                for (int i = PageIndex - 4; i <= PageIndex + 4; i++)
                 {
                     if (i > TotalPages)
                         break;
@@ -64,7 +64,7 @@ namespace SuxrobGM.Sdk.AspNetCore.TagHelpers
                     }           
                 }
 
-                if ((TotalPages - PageIndex) >= 4)
+                if ((TotalPages - PageIndex) > 4)
                 {
                     activeClassName = PageIndex == TotalPages ? "active" : "";
                     output.Content.AppendHtml("<li class='page-item disabled'><a class='page-link'>...</a></li>");
