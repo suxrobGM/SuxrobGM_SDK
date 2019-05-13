@@ -1,2 +1,2 @@
 # SuxrobGM_SDK
-SuxrobGM SDK light weight library 
+Suxrob's Software Development Kits
