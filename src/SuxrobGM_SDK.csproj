@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk</AssemblyName>
-    <Version>0.2.1</Version>
+    <Version>0.2.2</Version>
     <Authors>SuxrobGM</Authors>
     <Product>SuxrobGM's Software Development Kits</Product>
     <PackageTags>SDK, WPF, MVVM, Utils, DevelopmentKits, TagHelpers, AspNetCore, EntityFrameworkCore, EntityFramework</PackageTags>
@@ -12,6 +12,8 @@
     <Description>SuxrobGM's Software Development Kits</Description>
     <PackageId>SuxrobGM.Sdk</PackageId>
     <RootNamespace>SuxrobGM.Sdk</RootNamespace>
+    <PackageReleaseNotes>added ServerSideAnalyticStore extension</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
