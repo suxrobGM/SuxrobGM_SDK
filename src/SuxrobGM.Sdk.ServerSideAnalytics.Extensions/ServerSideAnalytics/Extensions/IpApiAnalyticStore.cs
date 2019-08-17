@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using ServerSideAnalytics;
 
-namespace SuxrobGM.Sdk.Extensions
+namespace SuxrobGM.Sdk.ServerSideAnalytics.Extensions
 {
     public static class ServerSideAnalyticsExtensions
     {

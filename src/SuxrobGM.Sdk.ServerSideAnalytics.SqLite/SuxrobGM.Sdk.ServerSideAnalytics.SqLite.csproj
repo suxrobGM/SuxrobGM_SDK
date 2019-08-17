@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SuxrobGM.Sdk.ServerSideAnalytics.SqLite</AssemblyName>
+    <Version>0.3</Version>
+    <Authors>Sukhrob Ilyosbekov</Authors>
+    <Product>SuxrobGM's Software Development Kits</Product>
+    <PackageTags>SDK, Utils, DevelopmentKits, TagHelpers, AspNet, AspNetCore, EntityFrameworkCore, EntityFramework, ServerSideAnalytics, Analytics</PackageTags>
+    <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
+    <Description>SuxrobGM's Software Development Kits</Description>
+    <PackageId>SuxrobGM.Sdk.ServerSideAnalytics.SqLite</PackageId>
+    <RootNamespace>SuxrobGM.Sdk</RootNamespace>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
+    <PackageReference Include="ServerSideAnalytics" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

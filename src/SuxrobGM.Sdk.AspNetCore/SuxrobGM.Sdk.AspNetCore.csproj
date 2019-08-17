@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SuxrobGM.Sdk.AspNetCore</AssemblyName>
+    <Version>0.3</Version>
+    <Authors>Sukhrob Ilyosbekov</Authors>
+    <Product>SuxrobGM's Software Development Kits</Product>
+    <PackageTags>SDK, Utils, DevelopmentKits, TagHelpers, AspNet, AspNetCore, EntityFrameworkCore, EntityFramework, ServerSideAnalytics, Analytics</PackageTags>
+    <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
+    <Description>SuxrobGM's Software Development Kits</Description>
+    <PackageId>SuxrobGM.Sdk.AspNetCore</PackageId>
+    <RootNamespace>SuxrobGM.Sdk</RootNamespace>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
