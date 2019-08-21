@@ -11,8 +11,8 @@
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
     <Description>SuxrobGM's Software Development Kits</Description>
     <PackageId>SuxrobGM.Sdk.AspNetCore</PackageId>
-    <RootNamespace>SuxrobGM.Sdk</RootNamespace>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RootNamespace>SuxrobGM.Sdk.AspNetCore</RootNamespace>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
