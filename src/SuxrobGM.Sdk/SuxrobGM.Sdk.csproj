@@ -6,7 +6,7 @@
     <Version>0.3</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>SuxrobGM's Software Development Kits</Product>
-    <PackageTags>SDK, Utils, DevelopmentKits, TagHelpers, AspNet, AspNetCore, EntityFrameworkCore, EntityFramework, ServerSideAnalytics, Analytics</PackageTags>
+    <PackageTags>sdk suxrobgm utils development kits tag helpers aspnet aspnetcore entity framework core</PackageTags>
     <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
     <Description>SuxrobGM's Software Development Kits</Description>

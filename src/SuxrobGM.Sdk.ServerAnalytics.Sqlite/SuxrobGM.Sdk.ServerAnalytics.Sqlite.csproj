@@ -6,10 +6,10 @@
     <Version>0.3</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>SuxrobGM's Software Development Kits</Product>
-    <PackageTags>Sqlite, Entity Framework, Entity Framework Core, AspNet, AspNetCore, Server Side Analytics, ServerSideAnalytics, Analytics</PackageTags>
+    <PackageTags>sdk suxrobgm utils sqlite database server side analytics web stat visitors visitor remote ip refer url network path user username identity geo ip</PackageTags>
     <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
-    <Description>SuxrobGM's Software Development Kits</Description>
+    <Description>Implementation of sqlite database for SuxrobGM.Sdk.ServerAnalytics</Description>
     <PackageId>SuxrobGM.Sdk.ServerAnalytics.Sqlite</PackageId>
     <RootNamespace>SuxrobGM.Sdk.ServerAnalytics.Sqlite</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

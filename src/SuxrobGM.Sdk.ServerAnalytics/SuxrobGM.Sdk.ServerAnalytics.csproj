@@ -6,10 +6,10 @@
     <Version>0.3</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>SuxrobGM's Software Development Kits</Product>
-    <PackageTags>SDK, Utils, DevelopmentKits, AspNet, AspNetCore, Server Side Analytics, ServerSideAnalytics, Analytics</PackageTags>
+    <PackageTags>sdk suxrobgm utils server side analytics web stat visitors visitor gdpr remote ip refer url network path user username identity geo ip</PackageTags>
     <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
-    <Description>SuxrobGM's Software Development Kits</Description>
+    <Description>Server side analytics tool for AspNet Core</Description>
     <PackageId>SuxrobGM.Sdk.ServerAnalytics</PackageId>
     <RootNamespace>SuxrobGM.Sdk.ServerAnalytics</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
