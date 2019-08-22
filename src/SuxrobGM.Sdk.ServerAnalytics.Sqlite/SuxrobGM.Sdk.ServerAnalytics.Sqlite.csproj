@@ -21,10 +21,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\SuxrobGM.Sdk.ServerAnalytics\SuxrobGM.Sdk.ServerAnalytics.csproj" />
+    <PackageReference Include="SuxrobGM.Sdk.ServerAnalytics" Version="0.3.0" />
   </ItemGroup>
 
   <ItemGroup>
