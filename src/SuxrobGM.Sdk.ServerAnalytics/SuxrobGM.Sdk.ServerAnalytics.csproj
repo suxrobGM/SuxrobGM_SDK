@@ -5,21 +5,30 @@
     <AssemblyName>SuxrobGM.Sdk.ServerAnalytics</AssemblyName>
     <Version>0.3</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
-    <Product>SuxrobGM's Software Development Kits</Product>
-    <PackageTags>sdk suxrobgm utils server side analytics web stat visitors visitor gdpr remote ip refer url network path user username identity geo ip</PackageTags>
+    <Product>Server Analytics</Product>
+    <PackageTags>suxrobgm sdk server side analytics web stat visitors visitor gdpr remote ip refer url network path user username identity geo ip</PackageTags>
     <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
-    <Description>Server side analytics tool for AspNet Core</Description>
+    <Description>Server side analytics tool for ASP.NET Core projects</Description>
     <PackageId>SuxrobGM.Sdk.ServerAnalytics</PackageId>
     <RootNamespace>SuxrobGM.Sdk.ServerAnalytics</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Copyright>Sukhrob Ilyosbekov 2019</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

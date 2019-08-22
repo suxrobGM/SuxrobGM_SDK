@@ -5,8 +5,8 @@
     <AssemblyName>SuxrobGM.Sdk.ServerAnalytics.Sqlite</AssemblyName>
     <Version>0.3</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
-    <Product>SuxrobGM's Software Development Kits</Product>
-    <PackageTags>sdk suxrobgm utils sqlite database server side analytics web stat visitors visitor remote ip refer url network path user username identity geo ip</PackageTags>
+    <Product>Sqlite database for Server Analytics</Product>
+    <PackageTags>suxrobgm sdk sqlite database server side analytics web stat visitors visitor remote ip refer url network path user username identity geo ip</PackageTags>
     <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
     <Description>Implementation of sqlite database for SuxrobGM.Sdk.ServerAnalytics</Description>
@@ -14,6 +14,8 @@
     <RootNamespace>SuxrobGM.Sdk.ServerAnalytics.Sqlite</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Copyright>Sukhrob Ilyosbekov 2019</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +25,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SuxrobGM.Sdk.ServerAnalytics\SuxrobGM.Sdk.ServerAnalytics.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

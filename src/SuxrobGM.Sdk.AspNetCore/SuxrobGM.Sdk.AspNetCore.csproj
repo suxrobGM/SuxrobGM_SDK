@@ -5,19 +5,28 @@
     <AssemblyName>SuxrobGM.Sdk.AspNetCore</AssemblyName>
     <Version>0.3</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
-    <Product>SuxrobGM's Software Development Kits</Product>
-    <PackageTags>sdk suxrobgm utils development kits tag helpers aspnet aspnetcore</PackageTags>
+    <Product>SuxrobGM.SDK.AspNetCore</Product>
+    <PackageTags>suxrobgm sdk utils development kits tag helpers aspnet core</PackageTags>
     <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
-    <Description>SuxrobGM's Software Development Kits</Description>
+    <Description>Software development tools for ASP.NET Core projects</Description>
     <PackageId>SuxrobGM.Sdk.AspNetCore</PackageId>
     <RootNamespace>SuxrobGM.Sdk.AspNetCore</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Copyright>Sukhrob Ilyosbekov 2019</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
