@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuxrobGM.Sdk", "src\SuxrobG
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuxrobGM.Sdk.AspNetCore", "src\SuxrobGM.Sdk.AspNetCore\SuxrobGM.Sdk.AspNetCore.csproj", "{12CDAFA9-52F6-4BB3-B509-C6C2A496C735}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuxrobGM.Sdk.ServerAnalytics", "src\SuxrobGM.Sdk.ServerAnalytics\SuxrobGM.Sdk.ServerAnalytics.csproj", "{272E37AD-61FE-4775-8012-F7B63E3B680C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuxrobGM.Sdk.ServerAnalytics", "src\SuxrobGM.Sdk.ServerAnalytics\SuxrobGM.Sdk.ServerAnalytics.csproj", "{272E37AD-61FE-4775-8012-F7B63E3B680C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuxrobGM.Sdk.ServerAnalytics.Sqlite", "src\SuxrobGM.Sdk.ServerAnalytics.Sqlite\SuxrobGM.Sdk.ServerAnalytics.Sqlite.csproj", "{976F98DE-27B8-451C-9CD2-5E96FF3DDC8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuxrobGM.Sdk.ServerAnalytics.Sqlite", "src\SuxrobGM.Sdk.ServerAnalytics.Sqlite\SuxrobGM.Sdk.ServerAnalytics.Sqlite.csproj", "{976F98DE-27B8-451C-9CD2-5E96FF3DDC8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

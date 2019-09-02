@@ -7,7 +7,7 @@
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>Server Analytics</Product>
     <PackageTags>suxrobgm sdk server side analytics web stat visitors visitor gdpr remote ip refer url network path user username identity geo ip</PackageTags>
-    <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/suxrobGM/SuxrobGM_SDK</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
     <Description>Server side analytics tool for ASP.NET Core projects</Description>
     <PackageId>SuxrobGM.Sdk.ServerAnalytics</PackageId>

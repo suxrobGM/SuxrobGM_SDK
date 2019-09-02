@@ -15,8 +15,12 @@ namespace SuxrobGM.Sdk.ServerAnalytics.Services
             {
                 try
                 {
-                    var response = await httpClient.GetStringAsync($"http://ip-api.com/json/{ipAddress}");
+                    var response = await httpClient.GetStringAsync($"http://ip-api.com/json/{ipAddress}");                  
                     var geoData = JsonConvert.DeserializeObject<GeoData>(response);
+
+                    if (geoData.Status != "success")
+                        throw new Exception();
+
                     return geoData;
                 }
                 catch (Exception)

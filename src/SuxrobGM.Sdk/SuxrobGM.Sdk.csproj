@@ -7,7 +7,7 @@
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>SuxrobGM.SDK</Product>
     <PackageTags>suxrobgm sdk utils development kits aspnet core entity framework core</PackageTags>
-    <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/suxrobGM/SuxrobGM_SDK</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
     <Description>Software development tools and utils</Description>
     <PackageId>SuxrobGM.Sdk</PackageId>

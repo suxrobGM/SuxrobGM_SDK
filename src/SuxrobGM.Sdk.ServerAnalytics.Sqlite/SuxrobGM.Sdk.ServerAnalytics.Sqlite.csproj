@@ -7,7 +7,7 @@
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>Sqlite database for Server Analytics</Product>
     <PackageTags>suxrobgm sdk sqlite database server side analytics web stat visitors visitor remote ip refer url network path user username identity geo ip</PackageTags>
-    <PackageProjectUrl>http://www.suxrobgm.net</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/suxrobGM/SuxrobGM_SDK</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
     <Description>Implementation of sqlite database for SuxrobGM.Sdk.ServerAnalytics</Description>
     <PackageId>SuxrobGM.Sdk.ServerAnalytics.Sqlite</PackageId>
