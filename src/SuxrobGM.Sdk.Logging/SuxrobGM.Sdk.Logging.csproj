@@ -5,17 +5,16 @@
     <AssemblyName>SuxrobGM.Sdk</AssemblyName>
     <Version>0.3.2</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
-    <Product>SuxrobGM.SDK</Product>
-    <PackageTags>suxrobgm sdk utils development kits aspnet core entity framework</PackageTags>
+    <Product>SuxrobGM.SDK Logger Provider</Product>
+    <PackageTags>suxrobgm sdk utils development kits aspnet core log logging provider</PackageTags>
     <PackageProjectUrl>https://github.com/suxrobGM/SuxrobGM_SDK</PackageProjectUrl>
     <RepositoryUrl>https://github.com/suxrobGM/SuxrobGM_SDK</RepositoryUrl>
-    <Description>Software development tools and utils</Description>
-    <PackageId>SuxrobGM.Sdk</PackageId>
-    <RootNamespace>SuxrobGM.Sdk</RootNamespace>
+    <Description>Logging provider for .NET Core applications</Description>
+    <PackageId>SuxrobGM.Sdk.Logging</PackageId>
+    <RootNamespace>SuxrobGM.Sdk.Logging</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Copyright>Sukhrob Ilyosbekov 2019</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +22,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@ using System.Net;
 using System.Numerics;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
 namespace SuxrobGM.Sdk.ServerAnalytics
 {
@@ -44,6 +45,13 @@ namespace SuxrobGM.Sdk.ServerAnalytics
         public static AnalyticsBuilder UseServerAnalytics(this IApplicationBuilder app, IAnalyticsRepository repository)
         {
             var builder = new AnalyticsBuilder(repository);
+            app.Use(builder.Run);
+            return builder;
+        }
+
+        public static AnalyticsBuilder UseServerAnalytics(this IApplicationBuilder app, IAnalyticsRepository repository, ILogger logger)
+        {
+            var builder = new AnalyticsBuilder(repository, logger);
             app.Use(builder.Run);
             return builder;
         }

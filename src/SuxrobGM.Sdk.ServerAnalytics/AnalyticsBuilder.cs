@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using SuxrobGM.Sdk.ServerAnalytics.Models;
 using SuxrobGM.Sdk.ServerAnalytics.Services;
 
@@ -12,7 +13,8 @@ namespace SuxrobGM.Sdk.ServerAnalytics
     public class AnalyticsBuilder
     {
         private readonly IAnalyticsRepository _repository;
-        private IGeoDataExtractor _geoDataExtractor;
+        private readonly IGeoDataExtractor _geoDataExtractor;
+        private readonly ILogger _logger;
         private List<Func<HttpContext, bool>> _exclude;
 
         internal AnalyticsBuilder(IAnalyticsRepository analyticsRepository)
@@ -21,12 +23,20 @@ namespace SuxrobGM.Sdk.ServerAnalytics
             _repository = analyticsRepository;
         }
 
+        internal AnalyticsBuilder(IAnalyticsRepository analyticsRepository, ILogger logger)
+        {
+            _geoDataExtractor = new IpApiService();
+            _repository = analyticsRepository;
+            _logger = logger;
+        }
+
         internal async Task Run(HttpContext context, Func<Task> next)
         {
             var identity = context.UserIdentity();
 
             //Pass the command to the next task in the pipeline
             await next.Invoke();
+            _logger?.LogInformation("Requested Server Analytics");
 
             //This request should be filtered out ?
             if (_exclude?.Any(x => x(context)) ?? false)
@@ -44,8 +54,10 @@ namespace SuxrobGM.Sdk.ServerAnalytics
                 UserAgent = context.Request.Headers["User-Agent"],
                 Path = context.Request.Path.Value,               
             };
+            _logger?.LogInformation($"Connected client ip: {traffic.RemoteIpAddress}");
 
             await _repository.AddToDatabaseAsync(traffic);
+            _logger?.LogInformation("Saved web request to database");
         }
 
         public AnalyticsBuilder Exclude(Func<HttpContext, bool> filter)
