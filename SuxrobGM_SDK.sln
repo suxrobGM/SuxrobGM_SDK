@@ -11,9 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuxrobGM.Sdk.ServerAnalytic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuxrobGM.Sdk.ServerAnalytics.Sqlite", "src\SuxrobGM.Sdk.ServerAnalytics.Sqlite\SuxrobGM.Sdk.ServerAnalytics.Sqlite.csproj", "{976F98DE-27B8-451C-9CD2-5E96FF3DDC8C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServerAnalytics", "src\TestServerAnalytics\TestServerAnalytics.csproj", "{D0F52986-76AA-4B3E-94CF-C438B3107166}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuxrobGM.Sdk.Logging", "src\SuxrobGM.Sdk.Logging\SuxrobGM.Sdk.Logging.csproj", "{A4EB582E-5086-45B9-B407-647A5EF90298}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuxrobGM.Sdk.Logging", "src\SuxrobGM.Sdk.Logging\SuxrobGM.Sdk.Logging.csproj", "{A4EB582E-5086-45B9-B407-647A5EF90298}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +35,6 @@ Global
 		{976F98DE-27B8-451C-9CD2-5E96FF3DDC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{976F98DE-27B8-451C-9CD2-5E96FF3DDC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{976F98DE-27B8-451C-9CD2-5E96FF3DDC8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0F52986-76AA-4B3E-94CF-C438B3107166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0F52986-76AA-4B3E-94CF-C438B3107166}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0F52986-76AA-4B3E-94CF-C438B3107166}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0F52986-76AA-4B3E-94CF-C438B3107166}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4EB582E-5086-45B9-B407-647A5EF90298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4EB582E-5086-45B9-B407-647A5EF90298}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4EB582E-5086-45B9-B407-647A5EF90298}.Release|Any CPU.ActiveCfg = Release|Any CPU

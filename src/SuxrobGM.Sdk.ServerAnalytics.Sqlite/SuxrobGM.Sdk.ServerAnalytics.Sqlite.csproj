@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk.ServerAnalytics.Sqlite</AssemblyName>
-    <Version>0.3.2</Version>
+    <Version>0.3.4</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>Sqlite database for Server Analytics</Product>
     <PackageTags>suxrobgm sdk sqlite database server side analytics web stat visitors visitor remote ip refer url network path user username identity geo ip</PackageTags>
@@ -19,8 +19,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0" />
     <PackageReference Include="SuxrobGM.Sdk.ServerAnalytics" Version="0.3.2" />
   </ItemGroup>
 
