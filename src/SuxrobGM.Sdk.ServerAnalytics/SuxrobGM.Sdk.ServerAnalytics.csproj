@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk.ServerAnalytics</AssemblyName>
-    <Version>0.3.4</Version>
+    <Version>0.3.5</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>Server Analytics</Product>
     <PackageTags>suxrobgm sdk server side analytics web stat visitors visitor gdpr remote ip refer url network path user username identity geo ip</PackageTags>

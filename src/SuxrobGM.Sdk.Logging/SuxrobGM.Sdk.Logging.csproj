@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk.Logging</AssemblyName>
-    <Version>0.3.4</Version>
+    <Version>0.3.5</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>SuxrobGM.SDK Logger Provider</Product>
     <PackageTags>suxrobgm sdk utils development kits aspnet core log logging provider</PackageTags>
