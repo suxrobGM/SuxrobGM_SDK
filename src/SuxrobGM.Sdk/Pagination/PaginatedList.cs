@@ -14,7 +14,7 @@ namespace SuxrobGM.Sdk.Pagination
         public bool HasPreviousPage => PageIndex > 1;
         public bool HasNextPage => PageIndex < TotalPages;
 
-        private PaginatedList(IEnumerable<T> items, int count, int pageIndex, int pageSize = 10)
+        public PaginatedList(IEnumerable<T> items, int count, int pageIndex, int pageSize = 10)
         {
             PageIndex = pageIndex;           
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
