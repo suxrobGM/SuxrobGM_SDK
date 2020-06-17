@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk.ServerAnalytics</AssemblyName>
-    <Version>0.3.6</Version>
+    <Version>0.3.7</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>Server Analytics</Product>
     <PackageTags>suxrobgm sdk server side analytics web stat visitors visitor gdpr remote ip refer url network path user username identity geo ip</PackageTags>
@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 

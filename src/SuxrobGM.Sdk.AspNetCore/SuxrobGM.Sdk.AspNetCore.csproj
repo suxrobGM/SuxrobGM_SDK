@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk.AspNetCore</AssemblyName>
-    <Version>0.3.6</Version>
+    <Version>0.3.7</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>SuxrobGM.SDK.AspNetCore</Product>
     <PackageTags>suxrobgm sdk utils development kits tag helpers aspnet core</PackageTags>
