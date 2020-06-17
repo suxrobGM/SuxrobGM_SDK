@@ -7,6 +7,10 @@ namespace SuxrobGM.Sdk.ServerAnalytics.Sqlite
     {
         private readonly string _connectionString;
        
+        public SqliteDbContext() : this("Data Source = app_analytics.sqlite")
+        {
+        }
+
         public SqliteDbContext(string connectionString)
         {
             _connectionString = connectionString;

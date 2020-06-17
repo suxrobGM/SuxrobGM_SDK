@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk.ServerAnalytics.Sqlite</AssemblyName>
-    <Version>0.3.5</Version>
+    <Version>0.3.6</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>Sqlite database for Server Analytics</Product>
     <PackageTags>suxrobgm sdk sqlite database server side analytics web stat visitors visitor remote ip refer url network path user username identity geo ip</PackageTags>
@@ -15,7 +15,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Copyright>Sukhrob Ilyosbekov 2019</Copyright>
+    <Copyright>Sukhrob Ilyosbekov 2020</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
