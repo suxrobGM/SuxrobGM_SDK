@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -12,7 +13,7 @@ namespace SuxrobGM.Sdk.Extensions
             string[] lat_low = { "a", "b", "v", "g", "d", "e", "yo", "zh", "z", "i", "y", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "f", "kh", "ts", "ch", "sh", "shch", "\"", "y", "'", "e", "yu", "ya" };
             string[] rus_up = { "А", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Э", "Ю", "Я" };
             string[] rus_low = { "а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я" };
-            for (int i = 0; i <= 32; i++)
+            for (var i = 0; i <= 32; i++)
             {
                 str = str.Replace(rus_up[i], lat_up[i]);
                 str = str.Replace(rus_low[i], lat_low[i]);
@@ -22,15 +23,14 @@ namespace SuxrobGM.Sdk.Extensions
        
         public static string IgnoreChars(this string str, string[] allowedChars = null)
         {
-            if (allowedChars == null)
+            allowedChars ??= new[]
             {
-                allowedChars = new string[]
-                {
-                    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
-                    "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "_"
-                };
-            }            
+                "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W",
+                "X", "Y", "Z",
+                "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w",
+                "x", "y", "z",
+                "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "_"
+            };            
 
             foreach (var ch in str)
             {
@@ -43,14 +43,9 @@ namespace SuxrobGM.Sdk.Extensions
 
         public static string RemoveReservedUrlCharacters(this string text)
         {
-            var reservedCharacters = new string[] { "!", "#", "$", "&", "'", "(", ")", "*", ",", "/", ":", ";", "=", "?", "@", "[", "]", "\"", "%", ".", "<", ">", "\\", "^", "_", "'", "{", "}", "|", "~", "`", "+" };
+            var reservedCharacters = new[] { "!", "#", "$", "&", "'", "(", ")", "*", ",", "/", ":", ";", "=", "?", "@", "[", "]", "\"", "%", ".", "<", ">", "\\", "^", "_", "'", "{", "}", "|", "~", "`", "+" };
 
-            foreach (var chr in reservedCharacters)
-            {
-                text = text.Replace(chr, "");
-            }
-
-            return text;
+            return reservedCharacters.Aggregate(text, (current, chr) => current.Replace(chr, ""));
         }
 
         public static string RemoveDiacritics(this string text)
@@ -68,6 +63,36 @@ namespace SuxrobGM.Sdk.Extensions
             }
 
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+        }
+
+        public static string ToUpperPascalCase(this string input, bool ignoreSpaces = true)
+        {
+            var sentences = input.Split();
+            var output = "";
+
+            foreach (var sentence in sentences)
+            {
+                if (ignoreSpaces)
+                {
+                    output += sentence.ToUpperFirstLetter();
+                }
+                else
+                {
+                    output += " " + sentence.ToUpperFirstLetter();
+                }
+            }
+
+            return output;
+        }
+
+        public static string ToUpperFirstLetter(this string input)
+        {
+            return input switch
+            {
+                null => throw new ArgumentNullException(nameof(input)),
+                "" => throw new ArgumentException($"{nameof(input)} cannot be empty", nameof(input)),
+                _ => input.First().ToString().ToUpper() + input.Substring(1),
+            };
         }
     }
 }

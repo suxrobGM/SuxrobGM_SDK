@@ -4,8 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace SuxrobGM.Sdk.Pagination
+namespace SuxrobGM.Sdk.AspNetCore.Pagination
 {
+    /// <summary>
+    /// Class to create paged items 
+    /// </summary>
+    /// <typeparam name="T">Data type of items</typeparam>
     public class PaginatedList<T> : List<T>
     {
         public int PageIndex { get; }
@@ -31,9 +35,10 @@ namespace SuxrobGM.Sdk.Pagination
 
         public static PaginatedList<T> Create(IEnumerable<T> source, int pageIndex, int pageSize = 10)
         {
-            var count = source.Count();
-            var items = source.Skip((pageIndex - 1) * pageSize)
-                                    .Take(pageSize).ToList();
+            var sourceArray = source as T[] ?? source.ToArray();
+            var count = sourceArray.Length;
+            var items = sourceArray.Skip((pageIndex - 1) * pageSize)
+                                    .Take(pageSize);
             return new PaginatedList<T>(items, count, pageIndex, pageSize);
         }
     }
