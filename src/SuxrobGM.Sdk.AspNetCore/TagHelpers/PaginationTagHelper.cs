@@ -6,13 +6,6 @@ namespace SuxrobGM.Sdk.AspNetCore.TagHelpers
     /// Tag helper to render pagination UI.
     /// Requires client-side Bootstrap 4 files to display correctly.
     /// </summary>
-    /// <remarks>
-    /// <c>TotalPages</c> - number of pages, default value is 10
-    /// <c>PageIndex</c> - number of the current page, default value is 1
-    /// <c>PagePath</c> - page URL, default value is <c>"./Index"</c>
-    /// <c>PageHandler</c> - page handler name to pass in query of the URL, default value is <c>"pageIndex"</c>
-    /// <c>PageFragment</c> - page fragment name to pass in query of the URL, default value is <c>null</c>
-    /// </remarks>
     [HtmlTargetElement("pagination")]
     public class PaginationTagHelper : TagHelper
     {
