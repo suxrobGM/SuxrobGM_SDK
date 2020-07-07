@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SuxrobGM.Sdk</name>
+    </assembly>
+    <members>
+        <member name="T:SuxrobGM.Sdk.Entities.EntityBase">
+            <summary>
+            Abstract class that defines base of all entities which data type of primary key is string
+            </summary>
+        </member>
+        <member name="P:SuxrobGM.Sdk.Entities.EntityBase.Id">
+            <summary>
+            Primary key of the entity
+            </summary>
+        </member>
+        <member name="M:SuxrobGM.Sdk.Extensions.StringExtensions.Slugify(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Method generates slugs
+            </summary>
+            <param name="str">Given string</param>
+            <param name="useHyphen">Flag which indicates that slug will be generated with hyphens instead underscore</param>
+            <param name="useLowerLetters">Flag which indicates that slug will be generated with lower letters</param>
+            <returns>Slugified string</returns>
+        </member>
+        <member name="M:SuxrobGM.Sdk.Extensions.StringExtensions.TranslateToLatin(System.String)">
+            <summary>
+            Translate all letters to latin alphabets
+            </summary>
+            <param name="str">Given string</param>
+            <returns></returns>
+        </member>
+        <member name="M:SuxrobGM.Sdk.Extensions.StringExtensions.IgnoreChars(System.String,System.String[])">
+            <summary>
+            Remove redundant chars from given string
+            </summary>
+            <param name="str">Given string</param>
+            <param name="allowedChars">Array of chars that allowed in this string. Default value includes all English letters, numbers, dot and underscore</param>
+            <returns></returns>
+        </member>
+        <member name="M:SuxrobGM.Sdk.Extensions.StringExtensions.RemoveReservedUrlCharacters(System.String)">
+            <summary>
+            Removes all URL reserved chars from given string
+            </summary>
+            <param name="text">Given string</param>
+            <returns></returns>
+        </member>
+        <member name="M:SuxrobGM.Sdk.Extensions.StringExtensions.ToUpperPascalCase(System.String,System.Boolean)">
+            <summary>
+            Converts given string to upper pascal case string
+            </summary>
+            <param name="input">Given string</param>
+            <param name="ignoreSpaces">Flag indicates that ignoring whitespaces from given string</param>
+            <returns></returns>
+        </member>
+        <member name="M:SuxrobGM.Sdk.Extensions.StringExtensions.ToUpperFirstLetter(System.String)">
+            <summary>
+            Only First letter of string will be converted to upper case
+            </summary>
+            <param name="input">Given string</param>
+            <returns></returns>
+        </member>
+        <member name="T:SuxrobGM.Sdk.Interfaces.IEntity`1">
+            <summary>
+            Interface to define set of entity classes
+            </summary>
+            <typeparam name="TKey">Data type of the primary key</typeparam>
+        </member>
+        <member name="P:SuxrobGM.Sdk.Interfaces.IEntity`1.Id">
+            <summary>
+            Primary key of the entity. TKey is data type of primary key
+            </summary>
+        </member>
+        <member name="T:SuxrobGM.Sdk.Interfaces.IRepository">
+            <summary>
+            Generic repository interface
+            </summary>
+        </member>
+        <member name="T:SuxrobGM.Sdk.Utils.Benchmark">
+            <summary>
+            Utility that helps to measure the execution time of method
+            </summary>
+        </member>
+        <member name="T:SuxrobGM.Sdk.Utils.GeneratorId">
+            <summary>
+            Static class to generate unique identifications
+            </summary>
+        </member>
+    </members>
+</doc>

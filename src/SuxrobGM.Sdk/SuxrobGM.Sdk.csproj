@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SuxrobGM.Sdk</AssemblyName>
-    <Version>0.3.8</Version>
+    <Version>0.3.9</Version>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Product>SuxrobGM.SDK</Product>
     <PackageTags>suxrobgm sdk utils development kits aspnet core entity framework</PackageTags>
@@ -16,6 +16,10 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Copyright>Sukhrob Ilyosbekov 2020</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\suxrobgm\source\repos\SuxrobGM_SDK\src\SuxrobGM.Sdk\SuxrobGM.Sdk.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

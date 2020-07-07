@@ -2,11 +2,42 @@
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace SuxrobGM.Sdk.Extensions
 {
     public static class StringExtensions
     {       
+        /// <summary>
+        /// Method generates slugs
+        /// </summary>
+        /// <param name="str">Given string</param>
+        /// <param name="useHyphen">Flag which indicates that slug will be generated with hyphens instead underscore</param>
+        /// <param name="useLowerLetters">Flag which indicates that slug will be generated with lower letters</param>
+        /// <returns>Slugified string</returns>
+        public static string Slugify(this string str, bool useHyphen = true, bool useLowerLetters = true)
+        {
+            var url = str.TranslateToLatin();
+            
+            // invalid chars           
+            url = Regex.Replace(url, @"[^A-Za-z0-9\s-]", "");
+
+            // convert multiple spaces into one space 
+            url = Regex.Replace(url, @"\s+", " ").Trim();
+            var words = url.Split().Where(str => !string.IsNullOrWhiteSpace(str));
+            url = string.Join(useHyphen ? '-' : '_', words);
+
+            if (useLowerLetters)
+                url = url.ToLower();
+
+            return url;
+        }
+
+        /// <summary>
+        /// Translate all letters to latin alphabets
+        /// </summary>
+        /// <param name="str">Given string</param>
+        /// <returns></returns>
         public static string TranslateToLatin(this string str)
         {
             string[] lat_up = { "A", "B", "V", "G", "D", "E", "Yo", "Zh", "Z", "I", "Y", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "F", "Kh", "Ts", "Ch", "Sh", "Shch", "\"", "Y", "'", "E", "Yu", "Ya" };
@@ -21,6 +52,12 @@ namespace SuxrobGM.Sdk.Extensions
             return str;
         }
        
+        /// <summary>
+        /// Remove redundant chars from given string
+        /// </summary>
+        /// <param name="str">Given string</param>
+        /// <param name="allowedChars">Array of chars that allowed in this string. Default value includes all English letters, numbers, dot and underscore</param>
+        /// <returns></returns>
         public static string IgnoreChars(this string str, string[] allowedChars = null)
         {
             allowedChars ??= new[]
@@ -41,6 +78,11 @@ namespace SuxrobGM.Sdk.Extensions
             return str;
         }
 
+        /// <summary>
+        /// Removes all URL reserved chars from given string
+        /// </summary>
+        /// <param name="text">Given string</param>
+        /// <returns></returns>
         public static string RemoveReservedUrlCharacters(this string text)
         {
             var reservedCharacters = new[] { "!", "#", "$", "&", "'", "(", ")", "*", ",", "/", ":", ";", "=", "?", "@", "[", "]", "\"", "%", ".", "<", ">", "\\", "^", "_", "'", "{", "}", "|", "~", "`", "+" };
@@ -65,6 +107,12 @@ namespace SuxrobGM.Sdk.Extensions
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
 
+        /// <summary>
+        /// Converts given string to upper pascal case string
+        /// </summary>
+        /// <param name="input">Given string</param>
+        /// <param name="ignoreSpaces">Flag indicates that ignoring whitespaces from given string</param>
+        /// <returns></returns>
         public static string ToUpperPascalCase(this string input, bool ignoreSpaces = true)
         {
             var sentences = input.Split();
@@ -85,6 +133,11 @@ namespace SuxrobGM.Sdk.Extensions
             return output;
         }
 
+        /// <summary>
+        /// Only First letter of string will be converted to upper case
+        /// </summary>
+        /// <param name="input">Given string</param>
+        /// <returns></returns>
         public static string ToUpperFirstLetter(this string input)
         {
             return input switch

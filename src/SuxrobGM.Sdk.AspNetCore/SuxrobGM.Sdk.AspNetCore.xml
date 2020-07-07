@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SuxrobGM.Sdk.AspNetCore</name>
+    </assembly>
+    <members>
+        <member name="T:SuxrobGM.Sdk.AspNetCore.Pagination.PaginatedList`1">
+            <summary>
+            Class to create paged items 
+            </summary>
+            <typeparam name="T">Data type of items</typeparam>
+        </member>
+        <member name="T:SuxrobGM.Sdk.AspNetCore.TagHelpers.PaginationTagHelper">
+            <summary>
+            Tag helper to render pagination UI.
+            Requires client-side Bootstrap 4 files to display correctly.
+            </summary>
+            <remarks>
+            <c>TotalPages</c> - number of pages, default value is 10
+            <c>PageIndex</c> - number of the current page, default value is 1
+            <c>PagePath</c> - page URL, default value is <c>"./Index"</c>
+            <c>PageHandler</c> - page handler name to pass in query of the URL, default value is <c>"pageIndex"</c>
+            <c>PageFragment</c> - page fragment name to pass in query of the URL, default value is <c>null</c>
+            </remarks>
+        </member>
+        <member name="P:SuxrobGM.Sdk.AspNetCore.TagHelpers.PaginationTagHelper.TotalPages">
+            <summary>
+            TotalPages - number of pages, default value is 10
+            </summary>
+        </member>
+        <member name="P:SuxrobGM.Sdk.AspNetCore.TagHelpers.PaginationTagHelper.PageIndex">
+            <summary>
+            PageIndex - number of the current page, default value is 1
+            </summary>
+        </member>
+        <member name="P:SuxrobGM.Sdk.AspNetCore.TagHelpers.PaginationTagHelper.PagePath">
+            <summary>
+            PagePath - page path, default value is <c>"./Index"</c>
+            </summary>
+        </member>
+        <member name="P:SuxrobGM.Sdk.AspNetCore.TagHelpers.PaginationTagHelper.PageHandler">
+            <summary>
+            PageHandler - page handler name to pass in query of the URL, default value is <c>"pageIndex"</c>
+            </summary>
+        </member>
+        <member name="P:SuxrobGM.Sdk.AspNetCore.TagHelpers.PaginationTagHelper.PageFragment">
+            <summary>
+            PageFragment - page fragment name to pass in query of the URL, default value is <c>null</c>
+            </summary>
+        </member>
+    </members>
+</doc>
