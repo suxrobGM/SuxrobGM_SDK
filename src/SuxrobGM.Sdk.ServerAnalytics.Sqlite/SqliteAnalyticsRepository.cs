@@ -20,11 +20,9 @@ namespace SuxrobGM.Sdk.ServerAnalytics.Sqlite
 
         public async Task AddToDatabaseAsync(WebTraffic traffic)
         {
-            using (var db = GetContext())
-            {
-                db.Traffics.Add(traffic);
-                await db.SaveChangesAsync();
-            }
+            await using var db = GetContext();
+            await db.Traffics.AddAsync(traffic);
+            await db.SaveChangesAsync();
         }
 
         private SqliteDbContext GetContext()
